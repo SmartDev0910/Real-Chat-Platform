@@ -1,0 +1,21 @@
+body::-webkit-scrollbar,
+.contact_list::-webkit-scrollbar,
+.chat_content::-webkit-scrollbar,
+.users::-webkit-scrollbar{
+  width: 0.4em;
+  height: 0.4em;
+}
+
+body::-webkit-scrollbar-thumb,
+.contact_list::-webkit-scrollbar-thumb,
+.chat_content::-webkit-scrollbar-thumb,
+.users::-webkit-scrollbar-thumb{
+  background-color: rgba(0,0,0,0.2);
+}
+
+.contact_list, .chat_content, .users {
+  scrollbar-arrow-color: #009688;
+  scrollbar-face-color: #eeeeee;
+  scrollbar-highlight-color: #eeeeee;
+  scrollbar-shadow-color: #dddddd;
+}

@@ -1,0 +1,222 @@
+.left {
+  width: 390px;
+  min-width: 390px;
+  height: 100%;
+  background-color: #fafafa;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Menu --------------------------------------------- */
+
+.menu {
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 3px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .avatar {
+    margin: 5px 20px;
+  }
+  a {
+    color: #777777;
+    text-decoration: none;
+  }
+  .icons {
+    i {
+      color: #aaaaaa;
+      margin: 0 15px;
+      &:hover {
+        color: #009688;
+        cursor: pointer;
+      }
+    }
+    .error {
+      color: #e57373;
+    }
+  }
+  .router-link-active {
+    color: #009688;
+    i {
+      color: #009688;
+    }
+  }
+  .notifications {
+    position: relative;
+    &[data-badge]:after {
+      content: attr(data-badge);
+      position: absolute;
+      top: -18px;
+      right: 8px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      font-size: 12px;
+      font-weight: bold;
+      color: #009688;
+      text-align: center;
+      border-radius: 50%;
+      box-shadow: 0 0 1px #fff;
+      line-height: 23px;
+    }
+  }
+}
+
+/* Search --------------------------------------------- */
+
+.search_container {
+  width: 100%;
+  height: 55px;
+  background: #fbfbfb;
+  display: flex;
+  .search {
+    width: 90%;
+    height: 30px;
+    margin: auto;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    display: flex;
+    i {
+      color: #aaaaaa;
+      margin: 4px 5px 0 5px;
+    }
+    input {
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      padding-left: 10px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+/* Filter --------------------------------------------- */
+
+.filter {
+  width: 100%;
+  height: 40px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-around;
+  button {
+    width: 30%;
+    height: 100%;
+    color: #777777;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px -1px 0px 0px rgba(186, 186, 186, 1);
+    }
+  }
+  .active {
+    font-weight: bold;
+    color: #009688;
+    box-shadow: 0px -1px 0px 0px rgba(186, 186, 186, 1);
+  }
+}
+
+/* Contacts --------------------------------------------- */
+
+.contact_list {
+  width: 100%;
+  background-color: #ffffff;
+  height: calc(95vh - 155);
+  border-radius: 0 0 0 3px;
+  overflow-y: auto;
+}
+
+
+.contact {
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  &:hover {
+    background-color: #f5f5f5;
+  }
+  .preview {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #eeeeee;
+    overflow: hidden;
+  }
+  a {
+    text-decoration: none;
+    color: #2a2a2a;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: inherit;
+  }
+  h6 {
+    font-weight: inherit;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .avatar {
+    margin: 12px 20px;
+  }
+  .photo {
+    margin-right: 5px;
+    color: #eeeeee;
+    font-size: 15px;
+  }
+  .time {
+    margin: 30px 10px;
+    p {
+      color: #74787E;
+      font-size: 12px;
+    }
+    i {
+      color: #009688;
+      font-size: 25px;
+    }
+  }
+  .middle {
+    margin: 30px auto;
+    color: #aaaaaa;
+  }
+  .active_chat {
+    color: #009688;
+    padding-left: 15px;
+  }
+  .active_message {
+    padding-left: 15px;
+    color: #444444;
+  }
+  .active_image {
+    box-shadow: 6px 0px 16px -13px rgba(119, 119, 119, 1);
+  }
+}
+
+/* Notifications */
+
+.notifications {
+  .mark {
+    line-height: 40px;
+    width: 100%;
+    background-color: #fbfbfb;
+    border: solid 1px #EEEEEE;
+    color: #777777;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    outline: 0;
+    &:hover {
+      font-weight: bold;
+      background-color: #fbfbfb;
+    }
+  }
+  .new_notification {
+    background-color: #FBFCFC;
+  }
+  .green_teal {
+    color: #009688;
+  }
+}

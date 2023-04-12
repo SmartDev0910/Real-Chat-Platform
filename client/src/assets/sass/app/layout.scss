@@ -1,0 +1,33 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #dbdbdb;
+  overflow: hidden;
+}
+
+.green_background {
+  background-color: #009688;
+  height: 130px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -100;
+}
+
+.navigate {
+  display: none;
+}
+
+
+.wrap {
+  display: flex;
+  height: 95vh;
+  width: 90%;
+  margin: 3vh auto 2vh auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px #7e7e7e;
+}
